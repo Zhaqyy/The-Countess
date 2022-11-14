@@ -1,0 +1,331 @@
+.bodymod {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px !important;
+    color: #404040;
+}
+
+.bar {
+    display: flex;
+    width: 95%;
+    min-height: 10vh;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logodiv {
+    display: flex;
+    align-items: center;
+    transition: all 0.2s ease-in-out;
+}
+.logodiv:hover{
+    transform: scale(1.1);
+}
+
+.logo {
+    max-width: 50px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 5px;
+}
+
+.hnav {
+    background-color: hsl(3, 77%, 48%);
+    ;
+    box-shadow: 0px 6px 3px 0px rgb(0 0 0 / 83%);
+}
+
+.bar h3 {
+    font-family: 'Whisper', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fafafa;
+    text-shadow: 2px 5px 2px rgb(0 0 0 / 49%);
+    line-height: 15px;
+}
+
+.bar button {
+    background: #FFBBAC;
+    box-shadow: 1px 2px 4px 0px rgb(0 0 0 / 25%);
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-size: .875rem;
+    color: #1c1c1cd1;
+    border: 1px;
+    border-color: #1c1c1c59;
+    border-style: solid;
+    cursor: pointer;
+}
+.bar button:hover{
+border-color: #444444c4;
+border:0;
+}
+
+.hero {
+    min-height: 90vh;
+    min-width: 100%;
+    align-self: center;
+    justify-self: center;
+    background-color: #404040;
+    background-image: radial-gradient(at left, rgb(157 34 27) 30%, rgb(213 41 32 / 10%) 58%),
+        url(./img/screen-0.jpg);
+    object-fit: contain;
+}
+
+.hero h1 {
+    grid-column: 2/3;
+    align-self: center;
+    font-family: 'Charm', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: max(3rem,4vw);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFFcc;
+    text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.25);
+}
+.gr1{
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+}
+
+.gr2 {
+    display: grid;
+    grid-template-columns: 5% 50% 5%;
+    justify-content: start;
+}
+.sec2 {
+    /* height: 100vh; */
+    background-image: url(./img/tri\ blod.png);
+    background-position: center;
+    background-size: cover;
+    background-color: hsl(0, 100%, 94%);
+}
+
+.sechead {
+
+    text-align: center;
+    padding: 1vmin;
+    font-size: clamp(1.5rem, 5vw, 3rem);
+    font-weight: bold;
+    color: #f5deb3b5;
+    margin-bottom: 5vh;
+}
+
+.sechead h2 {
+    margin: auto;
+    max-width: 50%;
+}
+
+.secbody {
+    min-height: 80vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.secpara{
+    background: #ffffff2e;
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    border: 1px solid #ffffff33;
+    align-self: center;
+    color:#1C1C1C;
+    padding: 2ch;
+    width: clamp(45ch, 65%, 75ch);
+}
+.secpara p {
+    padding-top: .3125rem;
+}
+.secbody p {
+    margin: 0;
+}
+
+.seccard {
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 5%;
+    min-height: 60vh;
+    padding: 1.875rem;
+    justify-items: center;
+    margin-block: 10vh;
+}
+
+.cards {
+    background: hsl(0, 0%, 85%);
+    box-shadow: 0px 4px 10px 4px hsla(0, 0%, 0%, 0.4);
+    border-radius: 40px;
+    width: 70%;
+    border: 1px solid #b1b1b182;
+    transition: all cubic-bezier(0, 0, 0.2, 1) 0.1s;
+}
+.cards:hover{
+    transform: scale(1.005);
+}
+
+.card1 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.cards p {
+    padding: clamp(1ch, 2ch, 5ch);
+}
+
+.span1 {
+    display: none;
+    background-color: hsl(0, 0%, 85%);
+    position: absolute;
+}
+
+.span1:hover {
+    display: block;
+}
+
+.span2:hover {
+    display: none;
+    width: 10px;
+}
+
+.cards h4 {
+    margin: 0;
+    padding-top: 1vh;
+}
+
+.cards hr {
+    height: 1px;
+    color: #1C1C1C;
+    width: 10px;
+    margin-bottom: -3px;
+}
+
+.cdimg1 {
+    background-image: url(./img/blood\ dona.jpg);
+    height: 60%;
+    background-position: 50% 35%;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0px 1px 20px -1px hsla(0, 0%, 0%, 0.3);
+}
+
+.card2 {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+}
+
+.cdimg2 {
+    background-image: url(./img/blood.png);
+    height: 60%;
+    background-position: center;
+    background-size: cover;
+    border-radius: 40px;
+    box-shadow: 0px 1px 20px -1px hsla(0, 0%, 0%, 0.3);
+}
+
+footer {
+    color: #fafafa;
+    padding: var(--blockPadding) max(2rem, 50vw - var(--contentWidth) / 2);
+    box-shadow: 0px -5px 13px 6px hsl(0deg 0% 0% / 30%);
+}
+
+footer .container {
+    min-height: 15vh;
+    background-color: #484848;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-inline: 2vw;
+    text-align: center;
+    align-items: baseline;
+}
+.container h4{
+    margin: 15px;
+}
+.container .logo{
+    align-items: baseline;
+}
+.container .logodiv{
+    align-self: center;
+}
+.b1 {
+    font-family: 'Whisper', cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #fafafa;
+    text-shadow: 2px 5px 2px rgb(0 0 0 / 49%);
+    line-height: 15px;
+    margin: auto;
+}
+
+.b2 {
+    color: #fafafa;
+    font-size:xx-small;
+    align-self: end;
+}
+
+.b2 p {
+    margin: 0;
+}
+
+.fp {
+    background-color: hsl(0, 90%, 61%);
+    border-radius: 8px;
+    margin: 0;
+    font-size: x-small;
+}
+
+
+
+@media screen and (max-width:1000px){
+    p{
+        font-size: 0.8rem;
+    }
+    footer{
+        font-size: 0.7rem;
+    }
+    .container .logodiv{
+       display: none;
+    }
+    .seccard{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+}
+    
+    .cards{
+        width: 85%;
+        height: 71vh;
+    margin-bottom: 5vh
+    }
+    .cdimg1{
+        min-height: 70%;
+    }
+    .cdimg2{
+        min-height: 70%;
+    }
+    .gr2 {
+        grid-template-columns: 5% 100% 5%;
+    }
+    .gr2 h1{
+        font-size: max(2rem,4vw);
+        margin: 0;
+    }
+    .hero{
+        background-position: 85% -0%;
+        background-image: radial-gradient(at top, rgb(157 34 27) 30%, rgb(213 41 32 / 10%) 58%), url(./img/screen-0.jpg);
+    }
+
+
+
+
+
+
+}
